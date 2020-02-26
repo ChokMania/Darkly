@@ -88,19 +88,21 @@ Le password <code>5ff9d0165b4f92b14994e5c685cdce28</code> est en MD5 donc on app
 On lower le tout et on applique un Sha256 pour obtenir le flag
 
 # Comment éviter cela ?
+Il suffit d'utiliser le <code>prepare</code> quand on fait des requêtes à la base de données comme dans l'exmple ci-dessous:
+
 ```php
 <?php
 	function name(id) {
 		try
 		{
 			// On se connecte
-			$bdd = new PDO('mysql:host=localhost;dbname=elevage', 'sdz', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION ));
+			$bdd = new PDO('mysql:host=localhost;dbname=name', 'mdp', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION ));
 			
 			// On prépare la requête
-			$requete = $bdd->prepare("SELECT * FROM Client WHERE email = :email");
+			$requete = $bdd->prepare("SELECT * FROM users WHERE id = :id");
 
-			// On lie la variable $email définie au-dessus au paramètre :email de la requête préparée
-			$requete->bindValue(':email', $email, PDO::PARAM_STR);
+			// On lie la variable $id définie au-dessus au paramètre :id de la requête préparée
+			$requete->bindValue(':id', $id, PDO::PARAM_STR);
 
 			//On exécute la requête
 			$requete->execute();
@@ -108,13 +110,12 @@ On lower le tout et on applique un Sha256 pour obtenir le flag
 			// On récupère le résultat
 			if ($requete->fetch())
 			{
-				echo 'Le client existe !';
+				echo 'INFORMATIONS';
 			}
 		} catch (Exception $e)
 		{
 			die('Erreur : ' . $e->getMessage());
 		}
 	}
-
 ?>
 ```
