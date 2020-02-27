@@ -3,7 +3,7 @@
 ![Alt Text](https://media.giphy.com/media/HwOmxUKFFNEwU/giphy.gif)
 
 ## Introduction
-Lorsque vous développer vos premiers sites web, vous n’avez généralement pas la
+Lorsque vous développez vos premiers sites web, vous n’avez généralement pas la
 moindre idée des vulnérabilités existantes dans le monde du web.
 Ce petit projet a pour but de combler ce manque : vous allez prendre conscience de
 ces vulnérabilités en faisant un audit d’un site web simple. Ce site présente des failles
@@ -19,7 +19,7 @@ Vous allez aussi comprendre ce que beaucoup de frameworks font de manière autom
 
 
 ## Explications pour chaque faille
-| Link  | Infomations  |
+| Link  | Informations  |
 |:---------|:--------:|
 |[1-Recover_Parameter_Tampering](1-Recover_Parameter_Tampering\Ressources\explications.md) ||
 |[2-Survey_Parameter_Tampering](2-Survey_Parameter_Tampering\Ressources\explications.md) ||
@@ -36,9 +36,13 @@ Vous allez aussi comprendre ce que beaucoup de frameworks font de manière autom
 |[13-Robots.txt_Hidden](13-Robots.txt_Hidden\Ressources\explications.md) ||
 |[14-XSS_File_Upload](14-XSS_File_Upload\Ressources\explications.md) ||
 
-Compétences
-Web
-Security
-SQL
-JS
-UNIX
+## Compétences
+- <code>Web</code>
+
+- <code>Security</code>
+
+- <code>SQL</code>
+
+- <code>JS</code>
+
+- <code>UNIX</code>
