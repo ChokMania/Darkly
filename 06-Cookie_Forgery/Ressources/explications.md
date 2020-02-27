@@ -1,4 +1,3 @@
-
 # Explications
 Dans toutes les pages, nous pouvons acceder aux cookies de session.
 

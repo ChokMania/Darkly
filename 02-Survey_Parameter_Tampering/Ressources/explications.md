@@ -24,5 +24,3 @@ Donc il suffit de changer la value pour fausser le survey.
 
 # Comment l'éviter ?
 Il suffit de mettre un check dans le backend de la value avant d'appliquer le changement.
-
-# Comment l'exploiter ?

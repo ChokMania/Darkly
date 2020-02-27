@@ -46,3 +46,8 @@ Vous allez aussi comprendre ce que beaucoup de frameworks font de manière autom
 - <code>JS</code>
 
 - <code>UNIX</code>
+
+## Auteurs
+
+[Aleksi Gautier](https://github.com/KeIias) et 
+[Julien Dumay](https://github.com/ChokMania)

@@ -9,11 +9,10 @@ Dans le footer present sur a peu près toutes les pages, il y a trois lines vers
 </ul>
 ```
 On observe qu'il ne s'agit pas d'un simple lien, mais d'une redirection vers le site en question:
-<code>index.php?page=redirect&;site=<code>
+<pre><code>index.php?page=redirect&;site=</code></pre>
+
 On peut ainsi rediriger vers n'importe quel site, comme dans l'exemple:
-<code>/index.php?page=redirect&site=www.google.fr</code>
+<pre><code>index.php?page=redirect&site=www.google.fr</code></pre>
 
 # Comment l'éviter ?
 Il suffit de mettre un check dans le backend du site sur lequel la demande a été efféctué avant d'effectuer le redirect.
-
-# Comment l'exploiter

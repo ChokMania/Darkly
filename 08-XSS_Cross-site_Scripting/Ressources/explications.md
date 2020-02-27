@@ -1,5 +1,5 @@
 # Explications
-Sur la page feedback du site, il est possible de remplir les champs **Name** et **Message** pour laisser un commentaire.
+Sur la page "feedback" du site, il est possible de remplir les champs **Name** et **Message** pour laisser un commentaire.
 
 En écrivant le mot <code>script</code> dans le champ message, on obtient le flag dédié.
 

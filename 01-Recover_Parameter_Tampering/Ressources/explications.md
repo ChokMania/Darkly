@@ -19,5 +19,3 @@ if (isset($_POST) && $_POST['submit']) {
 		  "Someone ask for a new password");
 }
 ```
-
-# Comment l'exploiter ?
