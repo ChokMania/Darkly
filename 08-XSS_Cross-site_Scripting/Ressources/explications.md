@@ -14,7 +14,7 @@ Voici un exemple classique permettant de vérifier si un site y est sensible:
 ```
 
 # Comment l'éviter
-On peut faire de l'escaping qui va "censurer" les éléments potentiellement dangereux d'une input utilisateur (comme les caractères "<>").
+On peut faire de l'escaping qui va "censurer" les éléments potentiellement dangereux d'une input utilisateur (comme les caractères **<>**).
 
 Il existe également des [middlewares](https://helmetjs.github.io/docs/xss-filter/) qui permettent de filtrer ce genre d'attaques:
 
