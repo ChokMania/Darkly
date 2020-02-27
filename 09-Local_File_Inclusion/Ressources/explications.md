@@ -1,9 +1,9 @@
 # Explications
 
-En navigant sur le site, on remarquesur certaines pages que leur URL contient **?page=** 
+En navigant sur le site, on remarque sur certaines pages que leur URL contient **?page=** 
 (ex: http://IP/index.php?page=survey).
 
-Dans ce cas, le mot **survey** réfère au fichier qu'il faut load sur cette page. On peut alors changer cette URL pour accéder aux autres fichiers du dossier et même remonter l'aborescence:
+Dans ce cas, le mot **survey** réfère au fichier qu'il faut charger sur cette page. On peut alors changer cette URL pour accéder aux autres fichiers du dossier et même remonter l'aborescence:
 
 http://IP/index.php?page=../../../../../../../etc/passwd
 
@@ -15,6 +15,6 @@ Il est également possible d'éxecuter des programmes sur le serveur en utilisan
 
 # Comment l'éviter
 
-Pour se prémunir de ce type d'attaque, on peut utiliser une base de données pour directement stocker le contenu des fichiers.
+Pour se prémunir de ce type d'attaque, on peut utiliser une base de données pour stocker directement le contenu des fichiers.
 
-On peut aussi utiliser la base données pour y stocker le chemin des fichiers database et leur assigner des ID; l'utilisateur n'aura accès qu'à ces ID sans pouvoir changer le path.
+On peut aussi utiliser la base données pour y stocker le chemin des fichiers et leur assigner des ID; l'utilisateur n'aura accès qu'à ces ID sans pouvoir changer le chemin d'accès.
