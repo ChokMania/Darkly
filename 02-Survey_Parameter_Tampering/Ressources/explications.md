@@ -22,5 +22,7 @@ On observe que le formulaire s'applique dès lors qu'un changement a été appli
 <code>javascript:this.form.submit();</code> 
 Donc il suffit de changer la value pour fausser le survey.
 
-# Comment éviter cela ?
+# Comment l'éviter ?
 Il suffit de mettre un check dans le backend de la value avant d'appliquer le changement.
+
+# Comment l'exploiter ?

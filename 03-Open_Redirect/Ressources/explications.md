@@ -13,6 +13,7 @@ On observe qu'il ne s'agit pas d'un simple lien, mais d'une redirection vers le 
 On peut ainsi rediriger vers n'importe quel site, comme dans l'exemple:
 <code>/index.php?page=redirect&site=www.google.fr</code>
 
-# Comment éviter cela ?
+# Comment l'éviter ?
 Il suffit de mettre un check dans le backend du site sur lequel la demande a été efféctué avant d'effectuer le redirect.
 
+# Comment l'exploiter

@@ -87,7 +87,7 @@ Le password <code>5ff9d0165b4f92b14994e5c685cdce28</code> est en MD5 donc on app
 <pre>FortyTwo</pre>
 On lower le tout et on applique un Sha256 pour obtenir le flag
 
-# Comment éviter cela ?
+# Comment l'éviter?
 Il suffit d'utiliser le <code>prepare</code> quand on fait des requêtes à la base de données comme dans l'exmple ci-dessous:
 
 ```php
@@ -119,3 +119,4 @@ Il suffit d'utiliser le <code>prepare</code> quand on fait des requêtes à la b
 	}
 ?>
 ```
+# Comment l'exploiter ?

@@ -9,7 +9,7 @@ Dans la page "Recover", il y un formulaire pour envoyer une demande de mot de pa
 On observe que la **value** contient l'email pour recover le mot de passe.
 Ainsi il est possible de changer cet email et de mettre le sien.
 
-# Comment éviter cela ?
+# Comment l'éviter ?
 Il suffit de mettre l'email dans le backend (donc non accessible dans le front) comme dans l'exemple suivant :
 ```php
 //mail(string $to, string $subject, string $message) : bool
@@ -19,3 +19,5 @@ if (isset($_POST) && $_POST['submit']) {
 		  "Someone ask for a new password");
 }
 ```
+
+# Comment l'exploiter ?
