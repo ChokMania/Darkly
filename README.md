@@ -21,20 +21,20 @@ Vous allez aussi comprendre ce que beaucoup de frameworks font de manière autom
 ## Explications pour chaque faille
 | Link  | Informations  |
 |:---------|:--------:|
-|[1-Recover_Parameter_Tampering](1-Recover_Parameter_Tampering\Ressources\explications.md) ||
-|[2-Survey_Parameter_Tampering](2-Survey_Parameter_Tampering\Ressources\explications.md) ||
-|[3-Open_Redirect](3-Open_Redirect\Ressources\explications.md) ||
-|[4-Member-Union-Based-SQL-Injection](4-Member-Union-Based-SQL-Injection\Ressources\explications.md) ||
-|[5-Image-Union-Based-SQL-Injection](5-Image-Union-Based-SQL-Injection\Ressources\explications.md) ||
-|[6-Cookie_Forgery](6-Cookie_Forgery\Ressources\explications.md) ||
-|[7-Http_Header](7-Http_Header\Ressources\explications.md) ||
-|[8-XSS_Cross-site_Scripting](8-XSS_Cross-site_Scripting\Ressources\explications.md) ||
-|[9-Remote_File_Inclusion](\Ressources\explications.md) ||
-|[10-XSS_Reflected_Cross-site_Scripting](10-XSS_Reflected_Cross-site_Scripting\Ressources\explications.md) ||
-|[11-Brute-Force](11-Brute-Force\Ressources\explications.md) ||
-|[12-Robots.txt_Htpasswd](12-Robots.txt_Htpasswd\Ressources\explications.md) ||
-|[13-Robots.txt_Hidden](13-Robots.txt_Hidden\Ressources\explications.md) ||
-|[14-XSS_File_Upload](14-XSS_File_Upload\Ressources\explications.md) ||
+|[01-Recover_Parameter_Tampering](https://github.com/ChokMania/Darkly/blob/master/01-Recover_Parameter_Tampering/Ressources/explications.md) ||
+|[02-Survey_Parameter_Tampering](https://github.com/ChokMania/Darkly/blob/master/02-Survey_Parameter_Tampering/Ressources/explications.md) ||
+|[03-Open_Redirect](https://github.com/ChokMania/Darkly/blob/master/03-Open_Redirect/Ressources/explications.md) ||
+|[04-Member-Union-Based-SQL-Injection](https://github.com/ChokMania/Darkly/blob/master/04-Member-Union-Based-SQL-Injection/Ressources/explications.md) ||
+|[05-Image-Union-Based-SQL-Injection](https://github.com/ChokMania/Darkly/blob/master/05-Image-Union-Based-SQL-Injection/Ressources/explications.md) ||
+|[06-Cookie_Forgery](https://github.com/ChokMania/Darkly/blob/master/06-Cookie_Forgery/Ressources/explications.md) ||
+|[07-Http_Header](https://github.com/ChokMania/Darkly/blob/master/07-Http_Header/Ressources/explications.md) ||
+|[08-XSS_Cross-site_Scripting](https://github.com/ChokMania/Darkly/blob/master/8-XSS_Cross-site_Scripting/Ressources/explications.md) ||
+|[09-Local_File_Inclusion](https://github.com/ChokMania/Darkly/blob/master/09-Local_File_Inclusion/Ressources/explications.md) ||
+|[10-XSS_Reflected_Cross-site_Scripting](https://github.com/ChokMania/Darkly/blob/master/10-XSS_Reflected_Cross-site_Scripting/Ressources/explications.md) ||
+|[11-Brute-Force](https://github.com/ChokMania/Darkly/blob/master/11-Brute-Force/Ressources/explications.md) ||
+|[12-Robots.txt_Htpasswd](https://github.com/ChokMania/Darkly/blob/master/12-Robots.txt_Htpasswd/Ressources/explications.md) ||
+|[13-Robots.txt_Hidden](https://github.com/ChokMania/Darkly/blob/master/13-Robots.txt_Hidden/Ressources/explications.md) ||
+|[14-XSS_File_Upload](https://github.com/ChokMania/Darkly/blob/master/14-XSS_File_Upload/Ressources/explications.md) ||
 
 ## Compétences
 - <code>Web</code>

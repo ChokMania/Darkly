@@ -119,4 +119,3 @@ Il suffit d'utiliser le <code>prepare</code> quand on fait des requêtes à la b
 	}
 ?>
 ```
-# Comment l'exploiter ?
