@@ -49,5 +49,5 @@ Vous allez aussi comprendre ce que beaucoup de frameworks font de manière autom
 
 ## Auteurs
 
-[Aleksi Gautier](https://github.com/KeIias) et 
+[Aleksi Gautier](https://github.com/Kelias-42) et 
 [Julien Dumay](https://github.com/ChokMania)
