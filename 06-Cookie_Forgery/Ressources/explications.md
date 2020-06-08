@@ -11,9 +11,9 @@ Et il possede une value:
 
 Qui est en MD5. Donc on applique un MD5 et on trouve que cette value traduite est :
 
-<pre><code>False</code></pre>
-Ainsi on remplace ce **False** par un True (en MD5) et on trouve le flag. 
+<pre><code>false</code></pre>
+Ainsi on remplace ce **false** par **true** (en MD5) et on trouve le flag.
 
 
-# Comment éviter cela ?
-Ne pas utiliser les cookies comme outils de verification d'admin, et faire une authentification basée sur des users avec privilèges. 
+# Comment l'éviter ?
+Ne pas utiliser les cookies comme outils de verification d'admin, et faire une authentification basée sur une base de donnée. 

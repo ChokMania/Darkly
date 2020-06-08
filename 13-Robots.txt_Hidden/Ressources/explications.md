@@ -7,7 +7,7 @@ Disallow: /.hidden</pre>
 
 Il y a un dossier <code>/.hidden</code> que l'on à pas explorer.
 
-Dedans ce trouve un arborescence assez "complèxe".
+Dedans ce trouve un arborescence assez "complexe".
 
 <pre>
 amcbevgondgcrloowluziypjdh/                        11-Sep-2001 21:21                   -
@@ -42,7 +42,7 @@ README                                             11-Sep-2001 21:21            
 Avec un depth = 3, avec au niveau 3 un README contenant un message.
 Donc on cherche dans 26^3 dossier notre flag avec une commande curl et donc 26^3 + 1 + 26 + 26*26 README.
 
-<pre><code>wget -r -np -R "index.html*" -e robots=off --no-parent --no-directories "http://192.168.1.175/.hidden/"
+<pre><code>wget -r -np -R "index.html*" -e robots=off --no-parent --no-directories "http://IP/.hidden/"
 </code></pre>
 > On obtient donc bien 18279 README (en comptant ceux present a chaque racines de nouveaux dossiers)
 

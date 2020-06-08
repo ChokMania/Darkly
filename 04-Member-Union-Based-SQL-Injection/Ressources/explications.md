@@ -61,6 +61,8 @@ On cherche donc des informations intéressantes.
 
 On try 2 part 2 les champs jusqu'à trouver 2 colonnes intéressante, **Commentaire** et **countersign** qui donnent :
 
+<code>1 UNION SELECT Commentaire, countersign FROM users</code>
+
 <pre>
 ID: 1 UNION SELECT Commentaire, countersign From users 
 First name: Barack Hussein

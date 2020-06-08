@@ -3,8 +3,7 @@ Sur la page "feedback" du site, il est possible de remplir les champs **Name** e
 
 En écrivant le mot <code>script</code> dans le champ message, on obtient le flag dédié.
 
-C'est un peu tiré par les cheveux comme "faille" mais en gros ça revient à mettre des balises ```<script>``` dans un champ.
-On appelle ce genre de faille XSS (Cross Site Scripting).
+On appelle ce genre de faille XSS (Cross Site Scripting). Même si normalement il faudrait ecrire ```<script>```
 
 Il peut en effet arriver que l'input d'un utilisateur récupérée via un champ puisse être éxecutée comme du code.
 

