@@ -20,4 +20,4 @@ data:text/html;base64 => Sert a indiquer le type du text qui suis.
 ```
 
 # Comment l'éviter ?
-Il suffit de mettre la source de l'image directement dans le code plutot que de l'envoyé en parametre GET
+Il suffit de mettre la source de l'image directement dans le code plutot que de l'envoyer en paramètre GET

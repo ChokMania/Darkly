@@ -16,3 +16,4 @@ On peut ainsi rediriger vers n'importe quel site, comme dans l'exemple:
 
 # Comment l'éviter ?
 Il suffit de mettre un check dans le backend du site sur lequel la demande a été efféctué avant d'effectuer le redirect.
+Ou il suffit de mettre le lien directement sans faire de redirection.

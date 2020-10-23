@@ -46,12 +46,10 @@ Donc on cherche dans 26^3 dossier notre flag avec une commande curl et donc 26^3
 </code></pre>
 > On obtient donc bien 18279 README (en comptant ceux present a chaque racines de nouveaux dossiers)
 
-En faisant du tri dedans, en supprimant des doublons etc
+En faisant du tri dedans, en supprimant des doublons etc...
 On trouve enfin le flag dans le fichier README.15794.
-Avec un calcul on en deduis donc qu'il se trouve :
+Avec un calcul, on en deduis donc qu'il se trouve :
 <pre><code>.hidden/whtccjokayshttvxycsvykxcfm/igeemtxnvexvxezqwntmzjltkt/lmpanswobhwcozdqixbowvbrhw/README</code></pre>
-
-
 
 # Comment l'éviter ?
 Il faut proteger la page en question avec un .htaccess.

